@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+    <nav id="navbar" class="w-full bg-white shadow-md p-4 transition-all">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">Brand</a>
+            <button id="menu-toggle" class="md:hidden text-gray-600 focus:outline-none">
+                ☰
+            </button>
+            <ul id="menu" class="hidden md:flex space-x-6">
+                <li><a href="#" class="text-gray-700 hover:text-blue-600">Home</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600">About</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600">Services</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+            </ul>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 p-4 bg-white shadow-md">
+            <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+            <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+            <a href="#" class="text-gray-700 hover:text-blue-600">Services</a>
+            <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+        </div>
+    </nav>
+    <div class="container mx-auto mt-20 p-6">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Welcome to Our Website</h1>
+        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec ligula id justo euismod facilisis. Aliquam erat volutpat.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 shadow rounded-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, nunc ut feugiat vehicula, risus nulla pharetra purus, in convallis nisl ligula non lacus.</div>
+            <div class="bg-white p-6 shadow rounded-lg">Donec gravida sem nec ligula tincidunt, nec fermentum metus fermentum. Suspendisse potenti. Vestibulum sed elit id risus ullamcorper hendrerit.</div>
+            <div class="bg-white p-6 shadow rounded-lg">Curabitur quis urna ac orci gravida convallis. Nulla facilisi. Duis interdum felis at orci ultricies, eget congue nulla vehicula.</div>
+        </div>
+        <div class="mt-10 h-[1000px] bg-gray-200 flex items-center justify-center">
+            <p class="text-gray-700">Scroll down to test the sticky navbar.</p>
+        </div>
+    </div>
+
+    <div class="container mx-auto mt-20 p-6">
+        <h1 class="text-3xl font-bold text-gray-800 mb-4">Welcome to Our Website</h1>
+        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec ligula id justo euismod facilisis. Aliquam erat volutpat.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 shadow rounded-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, nunc ut feugiat vehicula, risus nulla pharetra purus, in convallis nisl ligula non lacus.</div>
+            <div class="bg-white p-6 shadow rounded-lg">Donec gravida sem nec ligula tincidunt, nec fermentum metus fermentum. Suspendisse potenti. Vestibulum sed elit id risus ullamcorper hendrerit.</div>
+            <div class="bg-white p-6 shadow rounded-lg">Curabitur quis urna ac orci gravida convallis. Nulla facilisi. Duis interdum felis at orci ultricies, eget congue nulla vehicula.</div>
+        </div>
+        <div class="mt-10 h-[1000px] bg-gray-200 flex items-center justify-center">
+            <p class="text-gray-700">Scroll down to test the sticky navbar.</p>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
