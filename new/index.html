@@ -53,6 +53,91 @@
             <p class="text-gray-700">Scroll down to test the sticky navbar.</p>
         </div>
     </div>
+      <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold mb-4 text-indigo-400">Company</h3>
+                    <p class="mb-4">Building innovative solutions for the digital age.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-indigo-400 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-indigo-400 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-indigo-400 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-indigo-400 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4 text-indigo-400">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-indigo-400 transition">Home</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition">Services</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition">Portfolio</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4 text-indigo-400">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-indigo-400 transition">Web Development</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition">Mobile Apps</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition">UI/UX Design</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition">Digital Marketing</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition">SEO Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4 text-indigo-400">Newsletter</h3>
+                    <p class="mb-4">Subscribe to our newsletter for the latest updates.</p>
+                    <form id="newsletter-form" class="flex">
+                        <input type="email" placeholder="Your email" 
+                               class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-800">
+                        <button type="submit" 
+                                class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-r-md transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <p id="newsletter-message" class="mt-2 text-sm hidden"></p>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-700 my-6"></div>
+
+            <!-- Copyright and Bottom Links -->
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="mb-4 md:mb-0">© 2023 Company Name. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-indigo-400 transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-indigo-400 transition">Terms of Service</a>
+                    <a href="#" class="hover:text-indigo-400 transition">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript for Footer Functionality -->
+    
     
     <script src="index.js"></script>
 </body>
