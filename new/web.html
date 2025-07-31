@@ -1,293 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Complete Website Layout</title>
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="flex flex-col min-h-screen">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex flex-col min-h-screen">
     <!-- Header Section -->
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3">
-            <div class="flex justify-between items-center">
-                <!-- Logo/Brand -->
-                <div class="flex items-center">
-                    <a href="#" class="text-2xl font-bold text-indigo-600">BrandName</a>
-                </div>
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+          <!-- Logo/Brand -->
+          <div class="flex items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600">BrandName</a>
+          </div>
 
-                <!-- Desktop Navigation -->
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition">Home</a>
-                    <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition">About</a>
-                    <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition">Services</a>
-                    <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition">Portfolio</a>
-                    <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition">Contact</a>
-                </nav>
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex space-x-8">
+            <a
+              href="#"
+              class="text-gray-700 hover:text-indigo-600 font-medium transition"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-indigo-600 font-medium transition"
+              >About</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-indigo-600 font-medium transition"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-indigo-600 font-medium transition"
+              >Portfolio</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-indigo-600 font-medium transition"
+              >Contact</a
+            >
+          </nav>
 
-                <!-- CTA Button -->
-                <div class="hidden md:block">
-                    <button class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition">
-                        Get Started
-                    </button>
-                </div>
+          <!-- CTA Button -->
+          <div class="hidden md:block">
+            <button
+              class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition"
+            >
+              Get Started
+            </button>
+          </div>
 
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
-                <div class="flex flex-col space-y-3">
-                    <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition px-2 py-1">Home</a>
-                    <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition px-2 py-1">About</a>
-                    <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition px-2 py-1">Services</a>
-                    <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition px-2 py-1">Portfolio</a>
-                    <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition px-2 py-1">Contact</a>
-                </div>
-                <button class="mt-4 w-full bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition">
-                    Get Started
-                </button>
-            </div>
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden text-gray-700 focus:outline-none"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
         </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+          <div class="flex flex-col space-y-3">
+            <a
+              href="#"
+              class="text-gray-700 hover:text-indigo-600 font-medium transition px-2 py-1"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-indigo-600 font-medium transition px-2 py-1"
+              >About</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-indigo-600 font-medium transition px-2 py-1"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-indigo-600 font-medium transition px-2 py-1"
+              >Portfolio</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 hover:text-indigo-600 font-medium transition px-2 py-1"
+              >Contact</a
+            >
+          </div>
+          <button
+            class="mt-4 w-full bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
     </header>
 
     <!-- Main Content Section -->
     <main class="flex-grow">
-        <!-- Hero Section -->
-        <section class="hero-section text-white py-20 md:py-32 flex items-center">
-            <div class="container mx-auto px-4 text-center">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">Innovative Solutions for Your Business</h1>
-                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">We help businesses grow with cutting-edge technology and creative strategies tailored to your needs.</p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-md text-lg font-medium transition">
-                        Get Started
-                    </button>
-                    <button class="bg-white hover:bg-gray-100 text-indigo-600 px-8 py-3 rounded-md text-lg font-medium transition">
-                        Learn More
-                    </button>
-                </div>
+      <!-- Hero Section -->
+      <section class="hero-section text-white py-20 md:py-32 flex items-center">
+        <div class="container mx-auto px-4 text-center">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            Innovative Solutions for Your Business
+          </h1>
+          <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+            We help businesses grow with cutting-edge technology and creative
+            strategies tailored to your needs.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <button
+              class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-md text-lg font-medium transition"
+            >
+              Get Started
+            </button>
+            <button
+              class="bg-white hover:bg-gray-100 text-indigo-600 px-8 py-3 rounded-md text-lg font-medium transition"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              Our Services
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+              We offer a comprehensive suite of services to help your business
+              thrive in the digital landscape.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div
+              class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition"
+            >
+              <div class="text-indigo-600 mb-4">
+                <i class="fas fa-laptop-code text-4xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Web Development</h3>
+              <p class="text-gray-600">
+                Custom websites and web applications built with modern
+                technologies for optimal performance.
+              </p>
             </div>
-        </section>
 
-        <!-- Features Section -->
-        <section class="py-16 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
-                    <p class="text-gray-600 max-w-2xl mx-auto">We offer a comprehensive suite of services to help your business thrive in the digital landscape.</p>
-                </div>
+            <!-- Feature 2 -->
+            <div
+              class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition"
+            >
+              <div class="text-indigo-600 mb-4">
+                <i class="fas fa-mobile-alt text-4xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Mobile Apps</h3>
+              <p class="text-gray-600">
+                Cross-platform mobile applications that deliver seamless user
+                experiences.
+              </p>
+            </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Feature 1 -->
-                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
-                        <div class="text-indigo-600 mb-4">
-                            <i class="fas fa-laptop-code text-4xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-3">Web Development</h3>
-                        <p class="text-gray-600">Custom websites and web applications built with modern technologies for optimal performance.</p>
-                    </div>
+            <!-- Feature 3 -->
+            <div
+              class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition"
+            >
+              <div class="text-indigo-600 mb-4">
+                <i class="fas fa-chart-line text-4xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Digital Marketing</h3>
+              <p class="text-gray-600">
+                Data-driven marketing strategies to increase your online
+                visibility and conversions.
+              </p>
+            </div>
 
-                    <!-- Feature 2 -->
-                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
-                        <div class="text-indigo-600 mb-4">
-                            <i class="fas fa-mobile-alt text-4xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-3">Mobile Apps</h3>
-                        <p class="text-gray-600">Cross-platform mobile applications that deliver seamless user experiences.</p>
-                    </div>
+            <!-- Feature 4 - UI/UX -->
+            <div
+              class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition"
+            >
+              <div class="text-indigo-600 mb-4">
+                <i class="fas fa-pencil-ruler text-4xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">UI/UX Design</h3>
+              <p class="text-gray-600">
+                Beautiful and intuitive user interfaces designed to enhance user
+                experience and engagement.
+              </p>
+            </div>
 
-                    <!-- Feature 3 -->
-                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
-                        <div class="text-indigo-600 mb-4">
-                            <i class="fas fa-chart-line text-4xl"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-3">Digital Marketing</h3>
-                        <p class="text-gray-600">Data-driven marketing strategies to increase your online visibility and conversions.</p>
-                    </div>
-
-                     <!-- Feature 4 - UI/UX -->
+            <!-- Feature 5 - SEO -->
     <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
         <div class="text-indigo-600 mb-4">
-            <i class="fas fa-pencil-ruler text-4xl"></i>
+            <i class="fas fa-search-plus text-4xl"></i>
         </div>
-        <h3 class="text-xl font-semibold mb-3">UI/UX Design</h3>
-        <p class="text-gray-600">Beautiful and intuitive user interfaces designed to enhance user experience and engagement.</p>
+        <h3 class="text-xl font-semibold mb-3">SEO Service</h3>
+        <p class="text-gray-600">Comprehensive search engine optimization to improve your rankings and organic traffic.</p>
     </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="py-16 bg-indigo-600 text-white">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              What Our Clients Say
+            </h2>
+            <p class="max-w-2xl mx-auto opacity-90">
+              Don't just take our word for it - hear from our satisfied
+              customers.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-indigo-700 p-6 rounded-lg">
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-indigo-500 flex items-center justify-center mr-4"
+                >
+                  <span class="text-xl font-bold">JD</span>
                 </div>
+                <div>
+                  <h4 class="font-semibold">John Doe</h4>
+                  <p class="text-indigo-200 text-sm">CEO, TechCorp</p>
+                </div>
+              </div>
+              <p>
+                "Their web development team transformed our online presence. The
+                new site has increased our conversions by 40%."
+              </p>
+              <div class="mt-3 text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
             </div>
-        </section>
 
-        <!-- Testimonials Section -->
-        <section class="py-16 bg-indigo-600 text-white">
-            <div class="container mx-auto px-4">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
-                    <p class="max-w-2xl mx-auto opacity-90">Don't just take our word for it - hear from our satisfied customers.</p>
+            <!-- Testimonial 2 -->
+            <div class="bg-indigo-700 p-6 rounded-lg">
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-indigo-500 flex items-center justify-center mr-4"
+                >
+                  <span class="text-xl font-bold">AS</span>
                 </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Testimonial 1 -->
-                    <div class="bg-indigo-700 p-6 rounded-lg">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 rounded-full bg-indigo-500 flex items-center justify-center mr-4">
-                                <span class="text-xl font-bold">JD</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold">John Doe</h4>
-                                <p class="text-indigo-200 text-sm">CEO, TechCorp</p>
-                            </div>
-                        </div>
-                        <p>"Their web development team transformed our online presence. The new site has increased our conversions by 40%."</p>
-                        <div class="mt-3 text-yellow-400">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 2 -->
-                    <div class="bg-indigo-700 p-6 rounded-lg">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 rounded-full bg-indigo-500 flex items-center justify-center mr-4">
-                                <span class="text-xl font-bold">AS</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold">Alice Smith</h4>
-                                <p class="text-indigo-200 text-sm">Marketing Director</p>
-                            </div>
-                        </div>
-                        <p>"The digital marketing strategy they implemented has doubled our leads in just three months. Highly recommended!"</p>
-                        <div class="mt-3 text-yellow-400">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 3 -->
-                    <div class="bg-indigo-700 p-6 rounded-lg md:hidden lg:block">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 rounded-full bg-indigo-500 flex items-center justify-center mr-4">
-                                <span class="text-xl font-bold">RJ</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold">Robert Johnson</h4>
-                                <p class="text-indigo-200 text-sm">Founder, StartupX</p>
-                            </div>
-                        </div>
-                        <p>"Their mobile app development exceeded our expectations. The app has a 4.9 rating on both app stores."</p>
-                        <div class="mt-3 text-yellow-400">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
+                <div>
+                  <h4 class="font-semibold">Alice Smith</h4>
+                  <p class="text-indigo-200 text-sm">Marketing Director</p>
                 </div>
+              </div>
+              <p>
+                "The digital marketing strategy they implemented has doubled our
+                leads in just three months. Highly recommended!"
+              </p>
+              <div class="mt-3 text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
             </div>
-        </section>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-indigo-700 p-6 rounded-lg md:hidden lg:block">
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-indigo-500 flex items-center justify-center mr-4"
+                >
+                  <span class="text-xl font-bold">RJ</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Robert Johnson</h4>
+                  <p class="text-indigo-200 text-sm">Founder, StartupX</p>
+                </div>
+              </div>
+              <p>
+                "Their mobile app development exceeded our expectations. The app
+                has a 4.9 rating on both app stores."
+              </p>
+              <div class="mt-3 text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer Section -->
     <footer class="bg-gray-800 text-white pt-12 pb-6">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Company Info -->
-                <div class="mb-8">
-                    <h3 class="text-2xl font-bold mb-4 text-indigo-400">BrandName</h3>
-                    <p class="mb-4">Building innovative solutions for the digital age.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-300 hover:text-indigo-400 transition">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="text-gray-300 hover:text-indigo-400 transition">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="text-gray-300 hover:text-indigo-400 transition">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="text-gray-300 hover:text-indigo-400 transition">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Quick Links -->
-                <div class="mb-8">
-                    <h3 class="text-xl font-semibold mb-4 text-indigo-400">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-indigo-400 transition">Home</a></li>
-                        <li><a href="#" class="hover:text-indigo-400 transition">About Us</a></li>
-                        <li><a href="#" class="hover:text-indigo-400 transition">Services</a></li>
-                        <li><a href="#" class="hover:text-indigo-400 transition">Portfolio</a></li>
-                        <li><a href="#" class="hover:text-indigo-400 transition">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Services -->
-                <div class="mb-8">
-                    <h3 class="text-xl font-semibold mb-4 text-indigo-400">Services</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-indigo-400 transition">Web Development</a></li>
-                        <li><a href="#" class="hover:text-indigo-400 transition">Mobile Apps</a></li>
-                        <li><a href="#" class="hover:text-indigo-400 transition">UI/UX Design</a></li>
-                        <li><a href="#" class="hover:text-indigo-400 transition">Digital Marketing</a></li>
-                        <li><a href="#" class="hover:text-indigo-400 transition">SEO Services</a></li>
-                    </ul>
-                </div>
-
-                <!-- Newsletter -->
-                <div class="mb-8">
-                    <h3 class="text-xl font-semibold mb-4 text-indigo-400">Newsletter</h3>
-                    <p class="mb-4">Subscribe to our newsletter for the latest updates.</p>
-                    <form id="newsletter-form" class="flex">
-                        <input type="email" placeholder="Your email" 
-                               class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-800">
-                        <button type="submit" 
-                                class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-r-md transition">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                    <p id="newsletter-message" class="mt-2 text-sm hidden"></p>
-                </div>
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Company Info -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-bold mb-4 text-indigo-400">BrandName</h3>
+            <p class="mb-4">
+              Building innovative solutions for the digital age.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-300 hover:text-indigo-400 transition"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-300 hover:text-indigo-400 transition"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-300 hover:text-indigo-400 transition"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-300 hover:text-indigo-400 transition"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
             </div>
+          </div>
 
-            <!-- Divider -->
-            <div class="border-t border-gray-700 my-6 w-full"></div>
+          <!-- Quick Links -->
+          <div class="mb-8">
+            <h3 class="text-xl font-semibold mb-4 text-indigo-400">
+              Quick Links
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="hover:text-indigo-400 transition">Home</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-indigo-400 transition"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-indigo-400 transition"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-indigo-400 transition"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-indigo-400 transition">Contact</a>
+              </li>
+            </ul>
+          </div>
 
-            <!-- Copyright and Bottom Links -->
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <p class="mb-4 md:mb-0">© 2025 BrandName. All rights reserved.</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="hover:text-indigo-400 transition">Privacy Policy</a>
-                    <a href="#" class="hover:text-indigo-400 transition">Terms of Service</a>
-                    <a href="#" class="hover:text-indigo-400 transition">Sitemap</a>
-                </div>
-            </div>
+          <!-- Services -->
+          <div class="mb-8">
+            <h3 class="text-xl font-semibold mb-4 text-indigo-400">Services</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="hover:text-indigo-400 transition"
+                  >Web Development</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-indigo-400 transition"
+                  >Mobile Apps</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-indigo-400 transition"
+                  >UI/UX Design</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-indigo-400 transition"
+                  >Digital Marketing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-indigo-400 transition"
+                  >SEO Services</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="mb-8">
+            <h3 class="text-xl font-semibold mb-4 text-indigo-400">
+              Newsletter
+            </h3>
+            <p class="mb-4">
+              Subscribe to our newsletter for the latest updates.
+            </p>
+            <form id="newsletter-form" class="flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="px-4 py-2 w-full rounded-l-md focus:outline-none text-gray-800"
+              />
+              <button
+                type="submit"
+                class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-r-md transition"
+              >
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+            <p id="newsletter-message" class="mt-2 text-sm hidden"></p>
+          </div>
         </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-700 my-6 w-full"></div>
+
+        <!-- Copyright and Bottom Links -->
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="mb-4 md:mb-0">© 2025 BrandName. All rights reserved.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-indigo-400 transition"
+              >Privacy Policy</a
+            >
+            <a href="#" class="hover:text-indigo-400 transition"
+              >Terms of Service</a
+            >
+            <a href="#" class="hover:text-indigo-400 transition">Sitemap</a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-6 right-6 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition hidden">
-        <i class="fas fa-arrow-up"></i>
+    <button
+      id="back-to-top"
+      class="fixed bottom-6 right-6 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition hidden"
+    >
+      <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- JavaScript -->
-  
-</body>
+  </body>
 </html>
